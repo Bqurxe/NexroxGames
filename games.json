@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Add your first game",
+    "category": "Arcade",
+    "description": "Replace this sample with a game you have permission to embed.",
+    "icon": "🕹️",
+    "color": ["#493b78", "#252b46"],
+    "iframe": "https://example.com/"
+  }
+]
