@@ -1,10 +1,10 @@
 [
   {
-    "title": "Add your first game",
+    "title": "Jumping Shell",
     "category": "Arcade",
-    "description": "Replace this sample with a game you have permission to embed.",
-    "icon": "🕹️",
+    "description": "Jump into Jumping Shell, a quick platform game.",
+    "icon": "🐚",
     "color": ["#493b78", "#252b46"],
-    "iframe": "https://example.com/"
+    "iframe": "https://highwaytrafficunblocked.github.io/a5/jumping-shell"
   }
 ]
