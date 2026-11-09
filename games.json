@@ -6,5 +6,13 @@
     "icon": "🐚",
     "color": ["#493b78", "#252b46"],
     "iframe": "https://highwaytrafficunblocked.github.io/a5/jumping-shell"
+  },
+  {
+    "title": "Stickman Hook",
+    "category": "Arcade",
+    "description": "Swing through the levels in Stickman Hook.",
+    "icon": "🪝",
+    "color": ["#285b68", "#252b46"],
+    "iframe": "https://highwaytrafficunblocked.github.io/a/stickman-hook"
   }
 ]
