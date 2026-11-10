@@ -30,5 +30,13 @@
     "icon": "🏍️",
     "color": ["#a85b32", "#252b46"],
     "iframe": "https://highwaytrafficunblocked.github.io/a8/moto-x3m-2"
+  },
+  {
+    "title": "Stack Ball",
+    "category": "Arcade",
+    "description": "Smash through colorful platforms in Stack Ball.",
+    "icon": "🔴",
+    "color": ["#a34c67", "#252b46"],
+    "iframe": "https://highwaytrafficunblocked.github.io/a9/stack-ball"
   }
 ]
