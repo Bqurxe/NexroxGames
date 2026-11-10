@@ -14,5 +14,13 @@
     "icon": "🪝",
     "color": ["#285b68", "#252b46"],
     "iframe": "https://highwaytrafficunblocked.github.io/a/stickman-hook"
+  },
+  {
+    "title": "Blumgi Slime",
+    "category": "Arcade",
+    "description": "Bounce and jump through levels in Blumgi Slime.",
+    "icon": "🟢",
+    "color": ["#4a8f69", "#252b46"],
+    "iframe": "https://highwaytrafficunblocked.github.io/a2/blumgi-slime"
   }
 ]
