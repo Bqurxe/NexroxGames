@@ -5,8 +5,33 @@ const emptyState = document.querySelector('#empty-state');
 const playSection = document.querySelector('#play-area');
 const gameFrame = document.querySelector('#game-frame');
 const playingTitle = document.querySelector('#playing-title');
+const fullscreenButton = document.createElement('button');
 let games = [];
 let activeCategory = 'All games';
+
+fullscreenButton.className = 'close-button';
+fullscreenButton.type = 'button';
+fullscreenButton.textContent = 'Fullscreen';
+fullscreenButton.setAttribute('aria-label', 'Play game in fullscreen');
+document.querySelector('.play-heading').append(fullscreenButton);
+
+document.addEventListener('fullscreenchange', () => {
+  const isFullscreen = document.fullscreenElement === gameFrame;
+  fullscreenButton.textContent = isFullscreen ? 'Exit fullscreen' : 'Fullscreen';
+  fullscreenButton.setAttribute('aria-label', isFullscreen ? 'Exit fullscreen' : 'Play game in fullscreen');
+});
+
+fullscreenButton.addEventListener('click', async () => {
+  try {
+    if (document.fullscreenElement) {
+      await document.exitFullscreen();
+    } else if (gameFrame.requestFullscreen) {
+      await gameFrame.requestFullscreen();
+    }
+  } catch (error) {
+    console.error('Could not enter fullscreen mode.', error);
+  }
+});
 
 async function loadGames() {
   try {
@@ -97,6 +122,8 @@ function openGame(game) {
   }
   if (!['https:', 'http:'].includes(parsedUrl.protocol)) return;
   playingTitle.textContent = game.title;
+  gameFrame.setAttribute('allow', 'fullscreen');
+  gameFrame.allowFullscreen = true;
   gameFrame.src = parsedUrl.href;
   playSection.hidden = false;
   playSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
