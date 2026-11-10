@@ -22,5 +22,13 @@
     "icon": "🟢",
     "color": ["#4a8f69", "#252b46"],
     "iframe": "https://highwaytrafficunblocked.github.io/a2/blumgi-slime"
+  },
+  {
+    "title": "Moto X3M 2",
+    "category": "Racing",
+    "description": "Race through obstacle-filled tracks in Moto X3M 2.",
+    "icon": "🏍️",
+    "color": ["#a85b32", "#252b46"],
+    "iframe": "https://highwaytrafficunblocked.github.io/a8/moto-x3m-2"
   }
 ]
